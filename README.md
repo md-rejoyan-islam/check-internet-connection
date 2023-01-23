@@ -10,3 +10,7 @@
 * window.onoffine /onoffline
 * window.ononline /ononline
 * setInterval
+* clearInterval
+
+### Live Website Link
+<a href=''>Click</a>
