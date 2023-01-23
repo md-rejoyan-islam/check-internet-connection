@@ -6,6 +6,8 @@ const reconnect = document.getElementById("reconnect");
 // default time declare
 let time = 10;
 let clear = "";
+
+// offline event
 const again = (onoffline = (e) => {
   offline.classList.remove("hidden");
   time = 10;
