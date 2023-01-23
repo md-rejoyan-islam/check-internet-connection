@@ -7,4 +7,6 @@
 * JavaScript
 
 ### Using JavaScript 
-*
+* window.onoffine /onoffline
+* window.ononline /ononline
+* setInterval
