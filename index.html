@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>check internet connection</title>
+</head>
+<body class="bg-[#ddddee]">
+    <main>
+        <div class="offline hidden w-[400px] py-3 px-5 rounded-md flex  mx-auto bg-white gap-2 mt-1 border-t-4 border-pink-400" id="offline">
+            <span class=" fill-white  rounded-full p-2 h-fit bg-red-600 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="m1.293 8.395 1.414 1.414c.504-.504 1.052-.95 1.622-1.359L2.9 7.021c-.56.422-1.104.87-1.607 1.374zM6.474 5.06 3.707 2.293 2.293 3.707l18 18 1.414-1.414-5.012-5.012.976-.975a7.86 7.86 0 0 0-4.099-2.148L11.294 9.88c2.789-.191 5.649.748 7.729 2.827l1.414-1.414c-2.898-2.899-7.061-3.936-10.888-3.158L8.024 6.61A13.366 13.366 0 0 1 12 6c3.537 0 6.837 1.353 9.293 3.809l1.414-1.414C19.874 5.561 16.071 4 12 4a15.198 15.198 0 0 0-5.526 1.06zm-2.911 6.233 1.414 1.414a9.563 9.563 0 0 1 2.058-1.551L5.576 9.697c-.717.451-1.395.979-2.013 1.596zm2.766 3.014 1.414 1.414c.692-.692 1.535-1.151 2.429-1.428l-1.557-1.557a7.76 7.76 0 0 0-2.286 1.571zm7.66 3.803-2.1-2.1a1.996 1.996 0 1 0 2.1 2.1z"></path></svg>
+            </span>
+            <div>
+                <h1 class="font-bold text-lg">Lost Connection</h1>
+                <p class=" text-zinc-600">Your network is unavailable. We will attempt to reconnect you in <span id="timer">10</span> seconds</p>
+                <button class="my-2 bg-blue-600 rounded-md text-white py-2  px-2 " id="reconnect">Reconnect Now</button>
+            </div>
+        </div>
+
+        <!-- online -->
+        <div class="offline hidden w-[400px] py-3 px-5 rounded-md flex  mx-auto bg-white gap-2 mt-1 border-t-4 border-[#31cd76]" id="online">
+            <span class=" fill-white  rounded-full p-2 h-fit bg-[#31cd76] mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 6c3.537 0 6.837 1.353 9.293 3.809l1.414-1.414C19.874 5.561 16.071 4 12 4c-4.071.001-7.874 1.561-10.707 4.395l1.414 1.414C5.163 7.353 8.463 6 12 6zm5.671 8.307c-3.074-3.074-8.268-3.074-11.342 0l1.414 1.414c2.307-2.307 6.207-2.307 8.514 0l1.414-1.414z"></path><path d="M20.437 11.293c-4.572-4.574-12.301-4.574-16.873 0l1.414 1.414c3.807-3.807 10.238-3.807 14.045 0l1.414-1.414z"></path><circle cx="12" cy="18" r="2"></circle></svg>
+            </span>
+            <div>
+                <h1 class="font-bold text-lg">Restored connection</h1>
+                <p class=" text-zinc-600">Your device is now successfully connected to the internet. </p>
+                <button class="my-2 bg-blue-600 rounded-md text-white py-2  px-2" disabled="true">Reconnect Now</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
