@@ -3,6 +3,7 @@ const offline = document.getElementById("offline");
 const timer = document.getElementById("timer");
 const reconnect = document.getElementById("reconnect");
 
+// default time declare
 let time = 10;
 let clear = "";
 const again = (onoffline = (e) => {
