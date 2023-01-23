@@ -33,6 +33,7 @@ reconnect.onclick = () => {
   again();
 };
 
+//online event
 ononline = (e) => {
   offline.classList.add("hidden");
   time = 1;
