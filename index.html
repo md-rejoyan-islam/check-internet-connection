@@ -7,8 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>check internet connection</title>
   </head>
-  <body class="bg-[#ddddee]">
-    <main>
+  <body class="bg-[#ddddee] ">
+    <main class="grid  items-center justify-items-center place-items-center h-screen">
+      <div>
+        <h1 class="font-bold text-3xl my-2 text-center">Check Your Internet Connection</h1>
+      <p class="text-xl text-center">Turn off your internet to see offline notification</p>
+      </div>
+    </main>
+<div class="alert">
+     <!-- offline -->
       <div
         class="offline hidden w-[400px] py-3 px-5 rounded-md flex mx-auto bg-white gap-2 mt-1 border-t-4 border-pink-400"
         id="offline"
@@ -74,8 +81,7 @@
           </button>
         </div>
       </div>
-    </main>
-
+</div>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
