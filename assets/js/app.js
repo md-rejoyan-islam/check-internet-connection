@@ -25,6 +25,7 @@ const again = (onoffline = (e) => {
   }, 1000);
 });
 
+// reconnect button
 reconnect.onclick = () => {
   time = 10;
   timer.innerHTML = time;
