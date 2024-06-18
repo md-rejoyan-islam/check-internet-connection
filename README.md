@@ -13,4 +13,4 @@
 * clearInterval
 
 ### Live Website Link
-<a href='https://rejoyanislam.github.io/check-internet-connection/'>Click</a>
+<a href='https://md-rejoyan-islam.github.io/check-internet-connection'>Live Preview</a>
